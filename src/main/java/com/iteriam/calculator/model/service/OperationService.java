@@ -22,7 +22,7 @@ public class OperationService {
 		}
 		
 		if(oper == null) {
-			throw new OperationNotValidException("NOT VALID", "Operation not valid");
+			throw new OperationNotValidException("NOT VALID", "Operation [" + operator + "] not valid");
 		}else {
 			return oper.calculate(elem1, elem2);
 		}

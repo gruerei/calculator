@@ -65,14 +65,9 @@ class CalculatorApplicationTests {
 		double elem1 = 6.5;
 		double elem2 = 3;
 		
-		double result = 0;
-		
 		Assertions.assertThrows(OperationNotValidException.class, () -> {
 				operationService.calculate(elem1, elem2, ";");
 		});
 			
-		
-		
-		//Assertions.fail("Test will fail if gets here");
 	}
 }
