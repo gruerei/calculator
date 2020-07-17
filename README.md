@@ -1,10 +1,10 @@
-# Calculator
+**CALCULATOR API**
 Test para ITERIAM / SANITAS 
 
 Requisitos Obligatorios:
 - Usar JDK8.
 
-#OBLIGATORIO PARA EJECUTAR EL PROBLEMA:
+**OBLIGATORIO PARA EJECUTAR EL PROBLEMA:**
 
 - Instalacion del jar externo de Trace en el repositorio local de maven: 
 
@@ -16,7 +16,7 @@ mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file  \
 	
 - Con esto ya lo puedo añadir como dependencia al pom y empezar a importarlo y usarlo.
 
-#inDTO para SUMA:
+**inDTO para SUMA:**
 
 {
   "elem1": 1,
@@ -24,7 +24,7 @@ mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file  \
   "operation": "+"
 }
 
-#DTO para RESTA:
+**DTO para RESTA:**
 
 {
   "elem1": 1,
@@ -32,7 +32,7 @@ mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file  \
   "operation": "+-"
 }
 
-#DECISIONES VARIAS
+**DECISIONES VARIAS**
 	
 - He decidido hacer la Clase Operacion como clase padre (Y abstracta) a partir de la que el resto de Operaciones hereden. He reflexionado sobre la posibilidad de incluirla como una interfaz  con un metodo default de Java 8 para imprimir. Pero el hecho de tener que usar Trace para imprimir el resultado ha hecho que opte por no usar una Interfaz finalmente. Ademas, no estoy acostumbrado y no me gusta eso de poner implementaciones de metodo en interfaces.
 
