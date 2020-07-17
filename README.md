@@ -49,4 +49,6 @@ mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file  \
 - Añado un Manejador de Excepciones globales para manipular la salida de los Errores (en este momento para las validaciones de los parametros
  de entrada y para el caso de la Excepcion personalizada de OperationNotValidException.java)
  
+ - Añadidos Tests de Junit5 para testeo del Controllador.
+ 
  
