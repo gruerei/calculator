@@ -1,6 +1,8 @@
 package com.iteriam.calculator.model;
 
-
+/**
+ * Clase para la Operación RESTA.
+ */
 public class Substraction extends Operation{
 
 	public Substraction(double elem1, double elem2) {

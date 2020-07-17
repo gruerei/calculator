@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import com.iteriam.calculator.exceptions.OperationNotValidException;
-import com.iteriam.calculator.model.service.OperationService;
+import com.iteriam.calculator.service.OperationService;
 import com.iteriam.calculator.utils.Tracer;
 
 

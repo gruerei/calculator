@@ -1,6 +1,10 @@
 package com.iteriam.calculator.model;
 
-
+/**
+ * Clase Abstracta que da soporte a cualquier operación de la Calculadora.
+ * @author Gabriel
+ *
+ */
 public abstract class Operation {
 	private double elem1;
 	private double elem2;

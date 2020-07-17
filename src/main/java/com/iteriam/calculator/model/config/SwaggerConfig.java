@@ -11,6 +11,11 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+/**
+ * Configuración necesaria para el uso de SWAGGER2
+ * @author Gabriel
+ *
+ */
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
@@ -25,8 +30,8 @@ public class SwaggerConfig {
 	}
 
 	private ApiInfo apiEndPointsInfo() {
-		return new ApiInfoBuilder().title("Spring Boot REST API")
-				.description("Employee Management REST API")
+		return new ApiInfoBuilder().title("Calculator: REST API")
+				.description("REST API que devuelve el resultado de la operación invocada mediante parametros.")
 				.license("Apache 2.0")
 				.licenseUrl("http://www.apache.org/licenses/LICENSE-2.0.html")
 				.version("1.0.0")
