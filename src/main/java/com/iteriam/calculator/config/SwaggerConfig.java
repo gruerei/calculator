@@ -1,4 +1,4 @@
-package com.iteriam.calculator.model.config;
+package com.iteriam.calculator.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

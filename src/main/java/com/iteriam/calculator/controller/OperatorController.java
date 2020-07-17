@@ -18,7 +18,9 @@ import com.iteriam.calculator.dto.ErrorDTO;
 import com.iteriam.calculator.dto.InDTO;
 import com.iteriam.calculator.dto.OutDTO;
 import com.iteriam.calculator.exceptions.OperationNotValidException;
-import com.iteriam.calculator.service.OperationService;
+import com.iteriam.calculator.service.AdditionService;
+import com.iteriam.calculator.service.OperationsEnum;
+import com.iteriam.calculator.service.SubstractionService;
 import com.iteriam.calculator.utils.Tracer;
 
 import io.swagger.annotations.Api;
@@ -35,7 +37,11 @@ public class OperatorController {
 	private static final Logger logger = LoggerFactory.getLogger(OperatorController.class);
 	
 	@Autowired
-	OperationService operationService;
+	AdditionService additionService;
+	
+	@Autowired
+	SubstractionService substractionService;
+	
 	
 	@Autowired
 	Tracer tracer;
@@ -51,7 +57,15 @@ public class OperatorController {
 		
 		logger.info("Endpoint POST called -> /calculator");
 		
-		double result = operationService.calculate(inDTO.getElem1(), inDTO.getElem2(), inDTO.getOperation());
+		double result = 0;
+		if(inDTO.getOperation().equals(OperationsEnum.ADDITION.getOperator())) {
+			result =  additionService.calculate(inDTO.getElem1(), inDTO.getElem2());
+		}else if(inDTO.getOperation().equals(OperationsEnum.SUSTRACTION.getOperator())) {
+			result =  substractionService.calculate(inDTO.getElem1(), inDTO.getElem2());
+		} else {
+			throw new OperationNotValidException("NOT VALID", "Operation [" + inDTO.getOperation() + "] not valid");
+		}
+			
 		
 		String outMsg = "The result of the " + inDTO.getOperation() + " operation is " + result;
 		tracer.trace(outMsg);

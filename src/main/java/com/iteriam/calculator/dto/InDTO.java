@@ -16,6 +16,12 @@ public class InDTO {
 	private String operation;
 	
 	
+	public InDTO(Double elem1, Double elem2, String operation) {
+		this.elem1 = elem1;
+		this.elem2 = elem2;
+		this.operation = operation;
+	}
+	
 	public InDTO() {}
 
 
