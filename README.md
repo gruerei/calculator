@@ -4,7 +4,7 @@ Test para ITERIAM / SANITAS
 Requisitos Obligatorios:
 - Usar JDK8.
 
-**OBLIGATORIO PARA EJECUTAR EL PROBLEMA:**
+**OBLIGATORIO PARA EJECUTAR EL PROGRAMA:**
 
 - Instalacion del jar externo de Trace en el repositorio local de maven: 
 
