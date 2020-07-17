@@ -49,14 +49,5 @@ class CalculatorServicesTests {
 		tracer.trace("Resta : " + elem1 + " - " + elem2 + " : " + result);
 	}
 	
-//	@Test()
-//	void testKO() {
-//		double elem1 = 6.5;
-//		double elem2 = 3;
-//		
-//		Assertions.assertThrows(OperationNotValidException.class, () -> {
-//				operationService.calculate(elem1, elem2, ";");
-//		});
-//			
-//	}
+
 }
