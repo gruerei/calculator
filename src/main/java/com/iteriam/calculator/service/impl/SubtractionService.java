@@ -1,6 +1,8 @@
-package com.iteriam.calculator.service;
+package com.iteriam.calculator.service.impl;
 
 import org.springframework.stereotype.Service;
+
+import com.iteriam.calculator.service.OperationService;
 
 /**
  * Clase para la Operación RESTA.
@@ -8,7 +10,7 @@ import org.springframework.stereotype.Service;
  *
  */
 @Service
-public class SubstractionService implements OperationService {
+public class SubtractionService implements OperationService {
 
 
 	@Override

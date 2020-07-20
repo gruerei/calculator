@@ -5,8 +5,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.iteriam.calculator.service.AdditionService;
-import com.iteriam.calculator.service.SubstractionService;
+import com.iteriam.calculator.service.impl.AdditionService;
+import com.iteriam.calculator.service.impl.SubtractionService;
 import com.iteriam.calculator.utils.Tracer;
 
 
@@ -21,7 +21,7 @@ class CalculatorServicesTests {
 	AdditionService additionService;
 	
 	@Autowired
-	SubstractionService substractionService;
+	SubtractionService subtractionService;
 	
 	@Test
 	void contextLoads() {
@@ -43,7 +43,7 @@ class CalculatorServicesTests {
 		double elem1 = 6.5;
 		double elem2 = 3;
 		
-		double result = substractionService.calculate(elem1, elem2);
+		double result = subtractionService.calculate(elem1, elem2);
 
 		Assertions.assertEquals(3.5, result);
 		tracer.trace("Resta : " + elem1 + " - " + elem2 + " : " + result);
