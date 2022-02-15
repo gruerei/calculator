@@ -29,7 +29,7 @@ mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file  \
 {
   "elem1": 1,
   "elem2": 2,
-  "operation": "+-"
+  "operation": "-"
 }
 
 **DECISIONES VARIAS**
